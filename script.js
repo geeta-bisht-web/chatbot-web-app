@@ -38,3 +38,11 @@ form.addEventListener("submit", function (e) {
     showMessage(reply, "bot");
   }, 1000);
 });
+
+function clearChat() {
+  chat.innerHTML = "";
+}
+
+function refreshChat() {
+  location.reload();
+}

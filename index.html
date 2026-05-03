@@ -6,14 +6,32 @@
   <title>AI Chatbot</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body class="d-flex justify-content-center align-items-center vh-100">
 
   <div class="chatbox card shadow-lg rounded-4 overflow-hidden">
 
-    <div class="card-header h4 text-center bg-primary text-white">
-       Chatbot
+   <div class="card-header d-flex justify-content-between align-items-center bg-primary text-white px-3">
+
+      <div class="d-flex align-items-center">
+        <img src="https://png.pngtree.com/png-clipart/20230401/original/pngtree-smart-chatbot-cartoon-clipart-png-image_9015126.png"
+            style="height: 35px; border-radius: 50%;" class="me-2">
+        <span class="h5 mb-0">Chatbot</span>
+      </div>
+
+      <div class="dropdown">
+        <i class="bi bi-three-dots-vertical"
+          data-bs-toggle="dropdown"
+          style="font-size: 20px; cursor: pointer;"></i>
+
+        <ul class="dropdown-menu dropdown-menu-end" style="background-color: rgb(228, 229, 230); font-size: 15px;">
+          <li><a class="dropdown-item" href="#" onclick="clearChat()">Clear Chat</a></li>
+          <li><a class="dropdown-item" href="#" onclick="refreshChat()">Refresh</a></li>
+        </ul>
+      </div>
+
     </div>
 
     
@@ -31,5 +49,6 @@
   </div>
 
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

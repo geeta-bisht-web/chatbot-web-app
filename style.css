@@ -19,7 +19,7 @@ body {
 }
 
 .card-header {
-  background: linear-gradient(90deg, #2563eb, #1e40af) !important;
+  background: linear-gradient(90deg, #6425eb, #2a1eaf) !important;
   font-weight: 600;
   letter-spacing: 0.5px;
 }
@@ -59,6 +59,11 @@ body {
   background: #e2e8f0;
   color: #1e293b;
   border-bottom-left-radius: 4px;
+}
+
+.bot i, .you i {
+  font-size: 18px;
+  color: #2c329e;
 }
 
 .bubble:hover {
