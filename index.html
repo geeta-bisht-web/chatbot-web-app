@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Chatbot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+
+  <div class="chatbox card shadow-lg rounded-4 overflow-hidden">
+
+    <div class="card-header h4 text-center bg-primary text-white">
+       Chatbot
+    </div>
+
+    
+    <div id="chatStream" class="card-body overflow-auto">
+      <div class="bot mb-2">
+        <span class="bubble">Hey there  How can I help you?</span>
+      </div>
+    </div>
+    
+    <form id="chatForm" class="d-flex p-2 border-top">
+      <input type="text" id="chatInput" class="form-control rounded-pill me-2" placeholder="Message..." required />
+      <button class="btn btn-primary rounded-circle send-btn">➤</button>
+    </form>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

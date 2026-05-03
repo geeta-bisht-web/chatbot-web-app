@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient(to right, #cbd5f5, #e0e7ff);
+  font-family: Arial, sans-serif;
+}
+
+.chatbox {
+  width: 350px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.chatbox:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.25);
+}
+
+.card-header {
+  background: linear-gradient(90deg, #2563eb, #1e40af) !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#chatStream {
+  height: 350px;
+  background: #f8fafc;
+  padding: 12px;
+  scroll-behavior: smooth;
+}
+
+.bubble {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 16px;
+  max-width: 75%;
+  font-size: 14px;
+  line-height: 1.4;
+  animation: fadeIn 0.3s ease;
+}
+
+.you {
+  text-align: right;
+}
+
+.you .bubble {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.bot {
+  text-align: left;
+}
+
+.bot .bubble {
+  background: #e2e8f0;
+  color: #1e293b;
+  border-bottom-left-radius: 4px;
+}
+
+.bubble:hover {
+  opacity: 0.95;
+  transform: none;
+}
+
+form {
+  background: #fff;
+}
+
+#chatInput {
+  border-radius: 999px;
+  padding: 10px 16px;
+  border: 1px solid #e2e8f0;
+}
+
+#chatInput:focus {
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  border-color: #2563eb;
+}
+
+.send-btn {
+  width: 42px;
+  height: 42px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  transition: 0.2s;
+}
+
+.send-btn:hover {
+  transform: scale(1.08);
+  background: #1e40af;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
